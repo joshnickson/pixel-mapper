@@ -7,7 +7,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <h1>Game of Life</h1>
+        <h1>Pixel Mapper</h1>
           <Game />
         <div> 
         </div>
@@ -21,9 +21,9 @@ class Game extends Component {
     super(props);
     this.state = {
       tick: 0,
-      cells: Array(840).fill(false),
+      cells: Array(6000).fill(0),
+
     };
-    this.incrementTick = this.incrementTick.bind(this)
     this.toggleValue = this.toggleValue.bind(this)
   }
   
@@ -61,12 +61,6 @@ class Game extends Component {
   render () {
     return (
       <div> 
-        <div className='tick-count'>
-          Tick count: {this.state.tick}
-        </div>
-        <div>
-          <button className="step-button" onClick={this.incrementTick}>Step</button><br/>
-        </div>
         <div className='grid'>
           <div className='cell-container'>
           {this.state.cells.map((cell, index) => (

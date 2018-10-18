@@ -14,20 +14,22 @@ code {
 }
 
 .cell-container {
-  width: 600px;
+  width: 1500px;
+  height: 1000px;
 }
 
 .cell-container button {
   float: left;
   width: 15px;
   height: 15px;
-  border-radius: 0%;
-  margin: 0;
-  border-width: 0.5px;
+  outline-style: solid;
+  outline-color: gainsboro;
+  outline-width: 1px;
+  border: none;
 }
 
 button:focus {
-  outline: none;
+
 }
 
 .dead {
@@ -35,5 +37,5 @@ button:focus {
 }
 
 .alive {
-  background-color: black;
+  background-color: grey;
 }
