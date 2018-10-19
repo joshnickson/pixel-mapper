@@ -14,8 +14,8 @@ code {
 }
 
 .cell-container {
-  width: 1500px;
-  height: 1000px;
+  width: 2400px;
+  background-image: url("https://msr7.net/images/earth-map-black-and-white-15.jpg");
 }
 
 .cell-container button {
@@ -32,10 +32,45 @@ button:focus {
 
 }
 
-.dead {
-  background-color: white;
+img {
+  position: absolute;
+  left: 9.5%;
+  margin-left:-256px;
 }
 
-.alive {
-  background-color: grey;
+.grid {
+  position: absolute;
+  left: 10%;
+  margin-left:-256px;}
+
+.zero {
+  background-color: rgba(156, 190, 223, 0);
+}
+
+.one {
+  background-color: orange;
+}
+
+.two {
+  background-color: greenyellow;
+}
+
+.three {
+  background-color:   royalblue;
+}
+
+.four {
+  background-color: palevioletred;
+}
+
+.five {
+  background-color: seagreen;
+}
+
+.six {
+  background-color: rebeccapurple;
+}
+
+.seven {
+  background-color: bisque;
 }
